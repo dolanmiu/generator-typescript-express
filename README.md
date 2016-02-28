@@ -1,4 +1,6 @@
-# generator-typescript-express [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-typescript-express
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
 > Typescript and Express generator with best practices and lean depenencies
 
 ## Intro
@@ -35,6 +37,24 @@ Afterwards, the project will run ```npm install```, but you would need to run ``
 ```bash
 tsd install
 ```
+
+## Usage
+
+After the project is scaffolded, you must build the project. You can use [VSCode](https://code.visualstudio.com/), [Atom](https://atom.io/) with [```atom-typescript```](https://atom.io/packages/atom-typescript), or go hardcore with the ```tsc``` command. This will create a ```/build``` folder with the built ```.js``` filtes.
+
+Run ```gulp serve``` on the root, where the ```gulpfile.js``` is located to run the project locally to serve a local server on port 9000:
+
+```bash
+gulp serve
+```
+
+Get [PostMan](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en) or equivalent, and send a GET request to:
+
+```
+http://localhost:9000/thing/
+```
+
+Which will get you a nice response back.
 
 ## Getting To Know Yeoman
 
