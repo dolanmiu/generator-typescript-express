@@ -17,20 +17,49 @@ module.exports = yeoman.generators.Base.extend({
       name: 'someOption',
       message: 'Would you like to enable this option?',
       default: true
+    }, {
+      type: 'input',
+      name: 'appName',
+      message: 'Your project name',
+      default: this.appname, // Default to current folder name,
+      store: true
     }];
 
     this.prompt(prompts, function(props) {
       this.props = props;
       // To access props later use this.props.someOption;
-
       done();
     }.bind(this));
   },
 
-  writing: function() {
+  package: function() {
+    this.fs.copyTpl(
+      this.templatePath('package.json'),
+      this.destinationPath('package.json'), {
+        appName: this.props.appName
+      }
+    );
+  },
+
+  staticTemplates: function() {
     this.fs.copy(
-      this.sourceRoot(),
-      this.destinationRoot()
+      this.templatePath('src'),
+      this.destinationPath('src')
+    );
+
+    this.fs.copy(
+      this.templatePath('gulpfile.js'),
+      this.destinationPath('gulpfile.js')
+    );
+
+    this.fs.copy(
+      this.templatePath('tsconfig.json'),
+      this.destinationPath('tsconfig.json')
+    );
+
+    this.fs.copy(
+      this.templatePath('tsd.json'),
+      this.destinationPath('tsd.json')
     );
   },
 

@@ -7,7 +7,8 @@ describe('generator-typescript-express:app', function() {
   before(function(done) {
     helpers.run(path.join(__dirname, '../generators/app'))
       .withOptions({
-        someOption: true
+        someOption: true,
+        appName: true
       })
       .withPrompts({
         someAnswer: true
@@ -17,7 +18,7 @@ describe('generator-typescript-express:app', function() {
 
   it('creates files', function() {
     assert.file([
-      'dummyfile.txt'
+      'package.json'
     ]);
   });
 });

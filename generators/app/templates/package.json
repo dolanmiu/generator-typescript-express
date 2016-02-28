@@ -1,5 +1,5 @@
 {
-  "name": "test-typescript-express-project",
+  "name": "<%= appName %>",
   "version": "0.0.0",
   "main": "build/app.js",
   "dependencies": {
