@@ -4,7 +4,7 @@ var chalk = require('chalk');
 var yosay = require('yosay');
 
 module.exports = yeoman.generators.Base.extend({
-  prompting: function () {
+  prompting: function() {
     var done = this.async();
 
     // Have Yeoman greet the user.
@@ -19,7 +19,7 @@ module.exports = yeoman.generators.Base.extend({
       default: true
     }];
 
-    this.prompt(prompts, function (props) {
+    this.prompt(prompts, function(props) {
       this.props = props;
       // To access props later use this.props.someOption;
 
@@ -27,14 +27,14 @@ module.exports = yeoman.generators.Base.extend({
     }.bind(this));
   },
 
-  writing: function () {
+  writing: function() {
     this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
+      this.sourceRoot(),
+      this.destinationRoot()
     );
   },
 
-  install: function () {
-    this.installDependencies();
+  install: function() {
+    //this.installDependencies();
   }
 });

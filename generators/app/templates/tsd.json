@@ -1,0 +1,48 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "mime/mime.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "express/express.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "node/node.d.ts": {
+      "commit": "b10e5ade29708bb0a7d21916a9fe289973520e89"
+    },
+    "morgan/morgan.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "compression/compression.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "body-parser/body-parser.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "method-override/method-override.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "cookie-parser/cookie-parser.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "errorhandler/errorhandler.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "express-session/express-session.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "socket.io/socket.io.d.ts": {
+      "commit": "163a4277199c3d896d9efffe24ea84c85f55c8ac"
+    },
+    "mongoose/mongoose.d.ts": {
+      "commit": "b10e5ade29708bb0a7d21916a9fe289973520e89"
+    }
+  }
+}
