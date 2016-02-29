@@ -61,6 +61,16 @@ module.exports = yeoman.generators.Base.extend({
       this.templatePath('tsd.json'),
       this.destinationPath('tsd.json')
     );
+
+    this.fs.copy(
+      this.templatePath('.sample.env.json'),
+      this.destinationPath('.sample.env.json')
+    );
+
+    this.fs.copy(
+      this.templatePath('.gitignore'),
+      this.destinationPath('.gitignore')
+    );
   },
 
   install: function() {
